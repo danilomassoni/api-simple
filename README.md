@@ -27,7 +27,7 @@ Before start, ensure you have the tools installed:
 
 1 - Clone: 
 
-git clone https://github.com/danilomassoni/simple-api.git
+git clone https://github.com/danilomassoni/simple-api
 cd simple-api
 
 2 Set up MySQL database: 
@@ -120,30 +120,30 @@ APISimple/
 |-.idea
 |-.mvn
 |-src
-     |-main
-           |-java
-                 |-.com.danilomassoni.APISimple
-                                              |-config / #OpenAPIConfig
-                                              |-controllers / #PersonController
-                                              |-exceptions / #ExceptionResponse #ResourceNotFoundException
-                                                          |-handler / #CostomizedResponseEntityException
-                                              |-model / #Person
-                                              |-respositores / #PersonRepository
-                                              |-services / #PersonServices
-                                              #ApiSimpleApplication
-           |-resources / #application.yml     
-    |-test 
-          |-java     
-                |-com.danilomassoni.APISimple
-                                             |-config / #TestConfigs
-                                             |-controllers / #PersonControllersTest
-                                             |-integationtest 
-                                                             |-controller / #PersonControllerIntegrationTest
-                                                             |-swagger / SwaggerIntegrationTest
-                                                             |-testcontainers / #AbstractIntegrationTest
-                                             |-services / #PersonServicesTest
-                                             |-PersonRepositoryTest
-                |-resources / #application.yml   
+------|-main
+----------|-java
+----------------|-.com.danilomassoni.APISimple
+----------------------------------------------|-config / #OpenAPIConfig
+----------------------------------------------|-controllers / #PersonController
+----------------------------------------------|-exceptions / #ExceptionResponse #ResourceNotFoundException
+------------------------------------------------------------|-handler / #CostomizedResponseEntityException
+----------------------------------------------|-model / #Person
+----------------------------------------------|-respositores / #PersonRepository
+----------------------------------------------|-services / #PersonServices
+---------------------------------------------- #ApiSimpleApplication
+---------|-resources / #application.yml     
+------|-test 
+---------|-java     
+----------------|-com.danilomassoni.APISimple
+----------------------------------------------|-config / #TestConfigs
+----------------------------------------------|-controllers / #PersonControllersTest
+----------------------------------------------|-integationtest 
+------------------------------------------------------------|-controller / #PersonControllerIntegrationTest
+------------------------------------------------------------|-swagger / SwaggerIntegrationTest
+------------------------------------------------------------|-testcontainers / #AbstractIntegrationTest
+----------------------------------------------|-services / #PersonServicesTest
+----------------------------------------------|-PersonRepositoryTest
+----------------|-resources / #application.yml   
 |-pom.xml
 |READM.MD                
 
